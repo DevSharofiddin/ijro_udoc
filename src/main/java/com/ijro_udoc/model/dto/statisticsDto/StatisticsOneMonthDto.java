@@ -1,0 +1,22 @@
+package com.ijro_udoc.model.dto.statisticsDto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class StatisticsOneMonthDto {
+    private String employee_name;
+    private String position;
+    private List<LeaveTypesOneMonthDto> leave_types;
+    //явка
+    private Integer no;
+    private Integer day;
+    private Integer hour;
+    //всего
+    private Integer full_day;
+    private Integer full_hour;
+}
